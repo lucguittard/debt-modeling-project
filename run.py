@@ -26,7 +26,7 @@ sticky (string, optional): Stick the navbar to the top or the bottom of the view
 """
 
 navbar = dbc.NavbarSimple(
-    brand='YOUR APP NAME',
+    brand='PredictDebt',
     brand_href='/', 
     children=[
         dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
@@ -34,9 +34,9 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 
     ],
     sticky='top',
-    color='light', 
-    light=True, 
-    dark=False
+    color='primary', 
+    light=False, 
+    dark=True
 )
 
 footer = dbc.Container(
@@ -44,11 +44,10 @@ footer = dbc.Container(
         dbc.Col(
             html.P(
                 [
-                    html.Span('Your Name', className='mr-2'), 
-                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:<you>@<provider>.com'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/<you>/<repo>'), 
-                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/<you>/'), 
-                    html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/<you>'), 
+                    html.Span('Luc Guittard', className='mr-2'), 
+                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:lsguittard@gmail..com'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/lucguittard/Portfolio-Projects'), 
+                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/lsguittard/'), 
                 ], 
                 className='lead'
             )
